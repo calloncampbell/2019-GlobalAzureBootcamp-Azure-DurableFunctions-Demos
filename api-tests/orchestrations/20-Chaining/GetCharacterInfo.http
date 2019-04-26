@@ -1,0 +1,26 @@
+### ASynchronous call the GetCharacterInfoOrchestrator Function
+POST http://localhost:7071/api/start/GetCharacterInfoOrchestrator
+Content-Type: application/json
+
+"luke"
+
+
+### Synchronous call the GetCharacterInfoOrchestrator Function
+POST http://localhost:7071/api/startandwait/GetCharacterInfoOrchestrator
+    ?timeout=15
+    &interval=2
+Content-Type: application/json
+
+"luke"
+
+
+### Check the status of the orchestrator function.
+### Update the orchestratorInstanceId and storageCode 
+### so it matches the ID of your running orchestrator instance.
+@orchestratorInstanceId = 7cd87f2694ae4f7fa6cb39d2babff53d
+@storageCode = Fc0DqzcoZ3QyN2gazAqWMEJDLYXeTJJIR8mmn/Fa8pW40Xq3Ual/eg==
+@hubName=GlobalAzureBootcamp_DurableFunctionDemo
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestratorInstanceId}}
+    ?taskHub={{hubName}}
+    &connection=Storage
+    &code={{storageCode}}

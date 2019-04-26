@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurableFunction1", "DurableFunctions.Demo.DotNetCore\HelloDurableFunction\DurableFunction1.csproj", "{936BC331-01F2-4B6B-8905-120E7B13D4A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurableFunctions.Demo.DotNetCore", "DurableFunctions.Demo.DotNetCore\StarWarsDurableFunctions\DurableFunctions.Demo.DotNetCore.csproj", "{53C752DC-0E32-45A6-B96D-A089F5EC750E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Hello Durable Function", "1. Hello Durable Function", "{ECE52D9A-61D9-4B24-B081-FCF6A4BA1969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Star Wars API", "2. Star Wars API", "{152FB4D1-D8AC-4760-A4DC-80B13B289D77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{936BC331-01F2-4B6B-8905-120E7B13D4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936BC331-01F2-4B6B-8905-120E7B13D4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936BC331-01F2-4B6B-8905-120E7B13D4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936BC331-01F2-4B6B-8905-120E7B13D4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C752DC-0E32-45A6-B96D-A089F5EC750E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C752DC-0E32-45A6-B96D-A089F5EC750E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C752DC-0E32-45A6-B96D-A089F5EC750E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C752DC-0E32-45A6-B96D-A089F5EC750E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{936BC331-01F2-4B6B-8905-120E7B13D4A9} = {ECE52D9A-61D9-4B24-B081-FCF6A4BA1969}
+		{53C752DC-0E32-45A6-B96D-A089F5EC750E} = {152FB4D1-D8AC-4760-A4DC-80B13B289D77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68733314-07CC-4CBD-8F6B-A63A1E1C26E7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+### Retrieve the status of a specific orchestrator by id.
+### Returns a status message.
+@instanceId=5
+GET http://localhost:7071/api/status/{{instanceId}}
+
+### Retrieve the status including the history of a specific orchestrator by id.
+### Returns a status message.
+GET http://localhost:7071/api/status/{{instanceId}}
+    ?showHistory=true
+    &showHistoryOutput=true

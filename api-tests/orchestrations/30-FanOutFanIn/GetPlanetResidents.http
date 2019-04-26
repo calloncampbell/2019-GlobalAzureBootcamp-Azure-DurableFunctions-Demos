@@ -1,0 +1,26 @@
+### Asynchronous call the GetPlanetResidentsOrchestrator Function
+POST http://localhost:7071/api/start/GetPlanetResidentsOrchestrator
+Content-Type: application/json
+
+"tat"
+
+
+### Synchronous call the GetPlanetResidentsOrchestrator Function
+POST http://localhost:7071/api/startandwait/GetPlanetResidentsOrchestrator
+    ?timeout=15
+    &interval=2
+Content-Type: application/json
+
+"tat"
+
+
+### Check the status of the orchestrator function.
+### Update the orchestratorInstanceId and storageCode 
+### so it matches the ID of your running orchestrator instance.
+@orchestratorInstanceId = b4c7d5a3c3714e1b96b5d959b01ac84a
+@storageCode = Fc0DqzcoZ3QyN2gazAqWMEJDLYXeTJJIR8mmn/Fa8pW40Xq3Ual/eg==
+@hubName=GlobalAzureBootcamp_DurableFunctionDemo
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestratorInstanceId}}
+    ?taskHub={{hubName}}
+    &connection=Storage
+    &code={{storageCode}}

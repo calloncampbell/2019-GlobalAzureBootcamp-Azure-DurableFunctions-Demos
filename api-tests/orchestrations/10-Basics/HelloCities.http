@@ -1,0 +1,14 @@
+### Asynchronous call the Chaining Hello Function
+GET http://localhost:7071/api/ChainingFunction_HttpStart
+
+
+### Check the status of the orchestrator function.
+### Update the orchestratorInstanceId and storageCode 
+### so it matches the ID of your running orchestrator instance.
+@orchestrationId = 5b3514649af34bb19e8ccca270643a9f
+@storageCode = 3g2qK1ulqweEqhi2/0mjgiRKaOrDmm8m4SsL6cLgtUWlBa0CZd/1Jg==
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestrationId}}
+    ?taskHub=DurableFunctionsHub
+    &connection=Storage
+    &code={{{{storageCode}}}}
+
