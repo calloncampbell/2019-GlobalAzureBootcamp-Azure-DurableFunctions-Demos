@@ -17,9 +17,9 @@ Content-Type: application/json
 ### Check the status of the orchestrator function.
 ### Update the orchestratorInstanceId and storageCode 
 ### so it matches the ID of your running orchestrator instance.
-@orchestratorInstanceId = 7cd87f2694ae4f7fa6cb39d2babff53d
+@orchestratorInstanceId = 822457ef505940c8a92f080c6306d10a
 @storageCode = Fc0DqzcoZ3QyN2gazAqWMEJDLYXeTJJIR8mmn/Fa8pW40Xq3Ual/eg==
-@hubName=GlobalAzureBootcamp_DurableFunctionDemo
+@hubName=GlobalAzureBootcamp
 GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestratorInstanceId}}
     ?taskHub={{hubName}}
     &connection=Storage

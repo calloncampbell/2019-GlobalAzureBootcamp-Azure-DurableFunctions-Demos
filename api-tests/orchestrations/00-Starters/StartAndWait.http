@@ -47,7 +47,7 @@ Content-Type: application/json
 ### running orchestrator instance.
 @orchestratorInstanceId = d8b1daa9c048474fb89c1139c981f12d
 @storageCode = jLm5dvj2FG6pIVhnZaI2Pf5InGpM1uMoRkhzFRGnmnL3LPWsQ5a3ag==
-@hubName=DurableDemo
+@hubName=GlobalAzureBootcamp
 GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestratorInstanceId}}
     ?taskHub={{hubName}}
     &connection=Storage

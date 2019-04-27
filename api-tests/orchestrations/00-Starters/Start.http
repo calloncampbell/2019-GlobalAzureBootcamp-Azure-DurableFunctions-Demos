@@ -8,7 +8,8 @@ Content-Type: application/json
 
 ### Start the HelloName orchestrator function with an orchestrator instance id.
 ### Returns a status message.
-POST http://localhost:7071/api/start/HelloNameOrchestrator/{{$guid}}
+@orchestratorInstanceId = efb00a28-3f4f-4105-9286-30bc8e779bac
+POST http://localhost:7071/api/start/HelloNameOrchestrator/{{orchestratorInstanceId}}
 Content-Type: application/json
 
 "I ❤ Serverless"
@@ -18,8 +19,8 @@ Content-Type: application/json
 ### Update this orchestratorInstanceId so it matches the ID of your
 ### running orchestrator instance.
 @orchestratorInstanceId = efb00a28-3f4f-4105-9286-30bc8e779bac
-@storageCode = GLoOdgAOebifkr6wfEqmaMSAzrwtRlrSRw7O/gtiarfvo2ofQGmqXQ==
-@hubName=DurableDemo
+@storageCode = Fc0DqzcoZ3QyN2gazAqWMEJDLYXeTJJIR8mmn/Fa8pW40Xq3Ual/eg==
+@hubName=GlobalAzureBootcamp
 GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestratorInstanceId}}
     ?taskHub={{hubName}}
     &connection=Storage
