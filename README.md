@@ -1,4 +1,7 @@
 # 2019 Global Azure Bootcamp - Azure Durable Functions Demos
+
+ ![](./docs/_img/GlobalAzureBootcamp-Logo.png)
+
 This repo contains a .NET Core solution for my 2019 Global Azure Bootcamp presentation and demos on **Serverless Orchestration with Azure Durable Functions**. It also serves as demo material for some of my other Azure Functions [presentations](https://www.slideshare.net/calloncampbell).
 
 ## Getting Started
@@ -12,7 +15,8 @@ This repo contains a .NET Core solution for my 2019 Global Azure Bootcamp presen
 ### Solution
 
 The solution consists of the following projects:
-- DurableFunctions.Demo.DotNetCore, a Function App targeted at .NET Core 2.1.
+- **DurableFunction1**, a Function App targeted at .NET Core 2.1, and contains the default Durable Function sample code that Visual Studio creates.
+- **DurableFunctions.Demo.DotNetCore**, a Function App targeted at .NET Core 2.1, and contains more real world samples with best practices and design principles.
 
 The current version of this Function App depends on the free (and fun) external Star Wars API - [SWAPI](https://swapi.co/) in order to demonstrate function chaining and fan-out/fan-in patterns.  This API doesn't require any authentication which makes it easier to demo and experiment with.
 
@@ -20,20 +24,25 @@ The current version of this Function App depends on the free (and fun) external 
 
 The Function App solution consists of the following demos (found in seperate solution folders) which can be executed independently.
 
-#### 0 - Function Starters
+#### 00 - Starters
 TODO
 
-#### 1 - Function Basics
+#### 01 - Status
 TODO
 
-#### 2 - Function Chaining
+#### 10 - Basics
 TODO
 
-#### 3 - Function Fan-Out/Fan-In
+#### 20 - Chaining
+TODO
+
+#### 30 - Fan-Out/Fan-In
 TODO
 
 ## Using the Visual Studio Code REST Client Extension
 During my demos I used the excellent [REST Client](https://github.com/Huachao/vscode-restclient) extension for Visual Studio Code. If you have this extension installed then you can use the http files located in the [`api-tests`](/api-tests) folder to start the orchestration functions.
+
+ ![](./docs/_img/REST-Client.png)
 
 ## References
 Durable Functions (an extension of [Azure Functions](https://functions.azure.com) and [Azure WebJobs](https://docs.microsoft.com/en-us/azure/app-service/web-sites-create-web-jobs)) enables writing *long-running*, *stateful* function orchestrations in code in a serverless environment (PaaS options and self-hosting are also supported).
