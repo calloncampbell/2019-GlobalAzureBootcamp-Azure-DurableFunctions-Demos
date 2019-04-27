@@ -3,7 +3,7 @@
 POST http://localhost:7071/api/start/HelloNameOrchestrator
 Content-Type: application/json
 
-"I ❤ Serverless"
+"Hello Global Azure Bootcamp"
 
 
 ### Start the HelloName orchestrator function with an orchestrator instance id.
@@ -12,7 +12,7 @@ Content-Type: application/json
 POST http://localhost:7071/api/start/HelloNameOrchestrator/{{orchestratorInstanceId}}
 Content-Type: application/json
 
-"I ❤ Serverless"
+"Hello Global Azure Bootcamp"
 
 
 ### Checks the status of an orchestrator function.

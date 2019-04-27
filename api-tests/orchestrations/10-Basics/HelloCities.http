@@ -5,10 +5,11 @@ GET http://localhost:7071/api/ChainingFunction_HttpStart
 ### Check the status of the orchestrator function.
 ### Update the orchestratorInstanceId and storageCode 
 ### so it matches the ID of your running orchestrator instance.
-@orchestrationId = da5d9ebefa9b4113855051db46208de4
+@orchestrationId = ed66529150cd44bfb41de81c57477882
 @storageCode = 3g2qK1ulqweEqhi2/0mjgiRKaOrDmm8m4SsL6cLgtUWlBa0CZd/1Jg==
 GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{orchestrationId}}
     ?taskHub=DurableFunctionsHub
     &connection=Storage
     &code={{{{storageCode}}}}
 
+### Default TaskHub name is 'DurableFunctionsHub'
